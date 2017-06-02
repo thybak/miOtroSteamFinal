@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0734F8A61EBBB73B00252D49 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0734F8A51EBBB73B00252D49 /* Perfil.swift */; };
+		077A99FC1EA93EC1005F3820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A99FB1EA93EC1005F3820 /* AppDelegate.swift */; };
+		077A99FE1EA93EC1005F3820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A99FD1EA93EC1005F3820 /* ViewController.swift */; };
+		077A9A011EA93EC1005F3820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077A99FF1EA93EC1005F3820 /* Main.storyboard */; };
+		077A9A031EA93EC1005F3820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077A9A021EA93EC1005F3820 /* Assets.xcassets */; };
+		077A9A061EA93EC1005F3820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077A9A041EA93EC1005F3820 /* LaunchScreen.storyboard */; };
+		4F3955831ED0F67500EE2E19 /* LondrinaSolid-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F3955821ED0F67500EE2E19 /* LondrinaSolid-Regular.ttf */; };
+		4FD8DBBA1EC683F500E79E0F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8DBB91EC683F500E79E0F /* Game.swift */; };
+		4FD8DBBC1EC6840200E79E0F /* GamesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8DBBB1EC6840200E79E0F /* GamesController.swift */; };
+		AE33070A1EC4B59600CF99BB /* AchievementsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3307091EC4B59600CF99BB /* AchievementsController.swift */; };
+		AE33070C1EC4BB7E00CF99BB /* Logro.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33070B1EC4BB7E00CF99BB /* Logro.swift */; };
+		AE55A9861EC213CA005BCC92 /* FullProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE55A9851EC213CA005BCC92 /* FullProfileController.swift */; };
+		AE55A98A1EC22794005BCC92 /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE55A9891EC22794005BCC92 /* FriendsController.swift */; };
+		AE77D8CE1EAFA3F00084D81D /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77D8CD1EAFA3F00084D81D /* APIHelper.swift */; };
+		AEDD12FF1EBB871E00DF0719 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD12FE1EBB871E00DF0719 /* ProfileController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0734F8A51EBBB73B00252D49 /* Perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
+		077A99F81EA93EC1005F3820 /* MiOtroSteam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiOtroSteam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		077A99FB1EA93EC1005F3820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		077A99FD1EA93EC1005F3820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		077A9A001EA93EC1005F3820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		077A9A021EA93EC1005F3820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		077A9A051EA93EC1005F3820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		077A9A071EA93EC1005F3820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F3955821ED0F67500EE2E19 /* LondrinaSolid-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LondrinaSolid-Regular.ttf"; sourceTree = "<group>"; };
+		4FD8DBB91EC683F500E79E0F /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		4FD8DBBB1EC6840200E79E0F /* GamesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesController.swift; sourceTree = "<group>"; };
+		AE3307091EC4B59600CF99BB /* AchievementsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsController.swift; sourceTree = "<group>"; };
+		AE33070B1EC4BB7E00CF99BB /* Logro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logro.swift; sourceTree = "<group>"; };
+		AE55A9851EC213CA005BCC92 /* FullProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullProfileController.swift; sourceTree = "<group>"; };
+		AE55A9891EC22794005BCC92 /* FriendsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
+		AE77D8CD1EAFA3F00084D81D /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		AEDD12FE1EBB871E00DF0719 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		077A99F51EA93EC1005F3820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		077A99EF1EA93EC0005F3820 = {
+			isa = PBXGroup;
+			children = (
+				077A99FA1EA93EC1005F3820 /* MiOtroSteam */,
+				077A99F91EA93EC1005F3820 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		077A99F91EA93EC1005F3820 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				077A99F81EA93EC1005F3820 /* MiOtroSteam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		077A99FA1EA93EC1005F3820 /* MiOtroSteam */ = {
+			isa = PBXGroup;
+			children = (
+				077A99FB1EA93EC1005F3820 /* AppDelegate.swift */,
+				077A99FD1EA93EC1005F3820 /* ViewController.swift */,
+				4F3955821ED0F67500EE2E19 /* LondrinaSolid-Regular.ttf */,
+				AEDD12FE1EBB871E00DF0719 /* ProfileController.swift */,
+				4FD8DBB91EC683F500E79E0F /* Game.swift */,
+				077A99FF1EA93EC1005F3820 /* Main.storyboard */,
+				077A9A021EA93EC1005F3820 /* Assets.xcassets */,
+				077A9A041EA93EC1005F3820 /* LaunchScreen.storyboard */,
+				4FD8DBBB1EC6840200E79E0F /* GamesController.swift */,
+				077A9A071EA93EC1005F3820 /* Info.plist */,
+				AE77D8CD1EAFA3F00084D81D /* APIHelper.swift */,
+				0734F8A51EBBB73B00252D49 /* Perfil.swift */,
+				AE55A9851EC213CA005BCC92 /* FullProfileController.swift */,
+				AE55A9891EC22794005BCC92 /* FriendsController.swift */,
+				AE3307091EC4B59600CF99BB /* AchievementsController.swift */,
+				AE33070B1EC4BB7E00CF99BB /* Logro.swift */,
+			);
+			path = MiOtroSteam;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		077A99F71EA93EC1005F3820 /* MiOtroSteam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 077A9A0A1EA93EC1005F3820 /* Build configuration list for PBXNativeTarget "MiOtroSteam" */;
+			buildPhases = (
+				077A99F41EA93EC1005F3820 /* Sources */,
+				077A99F51EA93EC1005F3820 /* Frameworks */,
+				077A99F61EA93EC1005F3820 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiOtroSteam;
+			productName = MiOtroSteam;
+			productReference = 077A99F81EA93EC1005F3820 /* MiOtroSteam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		077A99F01EA93EC0005F3820 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = etsisi;
+				TargetAttributes = {
+					077A99F71EA93EC1005F3820 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 077A99F31EA93EC1005F3820 /* Build configuration list for PBXProject "MiOtroSteam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 077A99EF1EA93EC0005F3820;
+			productRefGroup = 077A99F91EA93EC1005F3820 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				077A99F71EA93EC1005F3820 /* MiOtroSteam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		077A99F61EA93EC1005F3820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3955831ED0F67500EE2E19 /* LondrinaSolid-Regular.ttf in Resources */,
+				077A9A061EA93EC1005F3820 /* LaunchScreen.storyboard in Resources */,
+				077A9A031EA93EC1005F3820 /* Assets.xcassets in Resources */,
+				077A9A011EA93EC1005F3820 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		077A99F41EA93EC1005F3820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0734F8A61EBBB73B00252D49 /* Perfil.swift in Sources */,
+				4FD8DBBA1EC683F500E79E0F /* Game.swift in Sources */,
+				AEDD12FF1EBB871E00DF0719 /* ProfileController.swift in Sources */,
+				AE77D8CE1EAFA3F00084D81D /* APIHelper.swift in Sources */,
+				4FD8DBBC1EC6840200E79E0F /* GamesController.swift in Sources */,
+				077A99FE1EA93EC1005F3820 /* ViewController.swift in Sources */,
+				AE55A9861EC213CA005BCC92 /* FullProfileController.swift in Sources */,
+				AE33070C1EC4BB7E00CF99BB /* Logro.swift in Sources */,
+				AE55A98A1EC22794005BCC92 /* FriendsController.swift in Sources */,
+				077A99FC1EA93EC1005F3820 /* AppDelegate.swift in Sources */,
+				AE33070A1EC4B59600CF99BB /* AchievementsController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		077A99FF1EA93EC1005F3820 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				077A9A001EA93EC1005F3820 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		077A9A041EA93EC1005F3820 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				077A9A051EA93EC1005F3820 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		077A9A081EA93EC1005F3820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		077A9A091EA93EC1005F3820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		077A9A0B1EA93EC1005F3820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MiOtroSteam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etsisi.MiOtroSteam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		077A9A0C1EA93EC1005F3820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MiOtroSteam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etsisi.MiOtroSteam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		077A99F31EA93EC1005F3820 /* Build configuration list for PBXProject "MiOtroSteam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077A9A081EA93EC1005F3820 /* Debug */,
+				077A9A091EA93EC1005F3820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		077A9A0A1EA93EC1005F3820 /* Build configuration list for PBXNativeTarget "MiOtroSteam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077A9A0B1EA93EC1005F3820 /* Debug */,
+				077A9A0C1EA93EC1005F3820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 077A99F01EA93EC0005F3820 /* Project object */;
+}
