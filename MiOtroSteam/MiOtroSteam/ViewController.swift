@@ -19,8 +19,6 @@ class ViewController: UIViewController {
         let url = NSURL (string: "http://miotrosteam.duckdns.org")
         let requestObj = NSURLRequest(url: url as! URL)
         webview.loadRequest(requestObj as URLRequest)
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     @IBAction
@@ -31,7 +29,6 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

@@ -9,16 +9,24 @@
 import Foundation
 
 class Logro {
-    var codigo: String
-    var conseguido: Bool
-    var nombre: String
-    var descripcion: String
+    var codigo: String = ""
+    var conseguido: Bool = false
+    var nombre: String = ""
+    var descripcion: String = ""
     
     init(logro: [String: AnyObject]){
-        self.codigo = logro["apiname"]! as! String
-        self.conseguido = logro["achieved"]! as! Int == 1
-        self.nombre = logro["name"]! as! String
-        self.descripcion = logro["description"]! as! String
+        if let codigo = logro["apiname"] as? String{
+            self.codigo = codigo
+        }
+        if let conseguido = logro["achieved"] as? Int{
+            self.conseguido = (conseguido == 1)
+        }
+        if let nombre = logro["name"] as? String {
+            self.nombre = nombre
+        }
+        if let descripcion = logro["description"] as? String{
+            self.descripcion = descripcion
+        }
     }
     
 }

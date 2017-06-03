@@ -9,6 +9,7 @@
 import Foundation
 
 class Perfil {
+    var steamid: String = ""
     var personaname: String = ""
     var profileurl: String = ""
     var avatar: String = ""
@@ -44,7 +45,7 @@ class Perfil {
         case .away:
             personastatestring = "Ausente"
         case .snooze:
-            personastatestring = "En hiberbación"
+            personastatestring = "En hibernación"
         case .lookingToPlay:
             personastatestring = "Deseando jugar"
         case .lookingToTrade:
@@ -57,23 +58,40 @@ class Perfil {
     }
     
     init(claves: [String: AnyObject]){
-        if claves.count > 0 {
-            self.personaname = claves["personaname"]! as! String
-            self.profileurl = claves["profileurl"]! as! String
-            self.avatar = claves["avatar"]! as! String
-            self.avatarmedium = claves["avatarmedium"]! as! String
-            self.avatarfull = claves["avatarfull"]! as! String
-            self.personastate = claves["personastate"]! as! Int
+        if let steamid = claves["steamid"] as? String{
+            self.steamid = steamid
+        }
+        if let personaname = claves["personaname"] as? String {
+            self.personaname = personaname
+        }
+        if let profileurl = claves["profileurl"] as? String{
+            self.profileurl = profileurl
+        }
+        if let avatar = claves["avatar"] as? String {
+            self.avatar = avatar
+        }
+        if let avatarmedium = claves["avatarmedium"] as? String {
+            self.avatarmedium = avatarmedium
+        }
+        if let avatarfull = claves["avatarfull"] as? String {
+            self.avatarfull = avatarfull
+        }
+        if let personastate = claves["personastate"] as? Int {
+            self.personastate = personastate
             setPersonaStateName()
-            self.communityvisibilitystate = claves["communityvisibilitystate"]! as! Int
-            if claves["profilestate"] != nil {
-                self.profilestate = 1
-            }
-            if claves["lastlogoff"] != nil {
-                self.lastlogoff = claves["lastlogoff"]! as! Int64
-                setLastLogOffDate()
-            }
-            self.commentpermission = claves["commentpermission"] != nil
+        }
+        if let communityvisibilitystate = claves["communityvisibilitystate"] as? Int{
+            self.communityvisibilitystate = communityvisibilitystate
+        }
+        if claves["profilestate"] != nil {
+            self.profilestate = 1
+        }
+        if claves["lastlogoff"] != nil {
+            self.lastlogoff = claves["lastlogoff"]! as! Int64
+            setLastLogOffDate()
+        }
+        if claves["commentpermission"] != nil {
+            self.commentpermission = true
         }
     }
 }

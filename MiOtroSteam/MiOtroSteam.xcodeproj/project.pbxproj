@@ -13,6 +13,8 @@
 		077A9A011EA93EC1005F3820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077A99FF1EA93EC1005F3820 /* Main.storyboard */; };
 		077A9A031EA93EC1005F3820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077A9A021EA93EC1005F3820 /* Assets.xcassets */; };
 		077A9A061EA93EC1005F3820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077A9A041EA93EC1005F3820 /* LaunchScreen.storyboard */; };
+		07C9863A1EE30F790053D44B /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C986391EE30F790053D44B /* NewsController.swift */; };
+		07C9863F1EE311750053D44B /* Noticia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9863E1EE311750053D44B /* Noticia.swift */; };
 		4F3955831ED0F67500EE2E19 /* LondrinaSolid-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F3955821ED0F67500EE2E19 /* LondrinaSolid-Regular.ttf */; };
 		4FD8DBBA1EC683F500E79E0F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8DBB91EC683F500E79E0F /* Game.swift */; };
 		4FD8DBBC1EC6840200E79E0F /* GamesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8DBBB1EC6840200E79E0F /* GamesController.swift */; };
@@ -33,6 +35,8 @@
 		077A9A021EA93EC1005F3820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		077A9A051EA93EC1005F3820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		077A9A071EA93EC1005F3820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07C986391EE30F790053D44B /* NewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
+		07C9863E1EE311750053D44B /* Noticia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia.swift; sourceTree = "<group>"; };
 		4F3955821ED0F67500EE2E19 /* LondrinaSolid-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LondrinaSolid-Regular.ttf"; sourceTree = "<group>"; };
 		4FD8DBB91EC683F500E79E0F /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4FD8DBBB1EC6840200E79E0F /* GamesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesController.swift; sourceTree = "<group>"; };
@@ -74,24 +78,42 @@
 		077A99FA1EA93EC1005F3820 /* MiOtroSteam */ = {
 			isa = PBXGroup;
 			children = (
+				07C9863D1EE310C70053D44B /* Core */,
+				07C9863B1EE3107E0053D44B /* Controllers */,
 				077A99FB1EA93EC1005F3820 /* AppDelegate.swift */,
-				077A99FD1EA93EC1005F3820 /* ViewController.swift */,
 				4F3955821ED0F67500EE2E19 /* LondrinaSolid-Regular.ttf */,
-				AEDD12FE1EBB871E00DF0719 /* ProfileController.swift */,
-				4FD8DBB91EC683F500E79E0F /* Game.swift */,
 				077A99FF1EA93EC1005F3820 /* Main.storyboard */,
 				077A9A021EA93EC1005F3820 /* Assets.xcassets */,
 				077A9A041EA93EC1005F3820 /* LaunchScreen.storyboard */,
-				4FD8DBBB1EC6840200E79E0F /* GamesController.swift */,
 				077A9A071EA93EC1005F3820 /* Info.plist */,
-				AE77D8CD1EAFA3F00084D81D /* APIHelper.swift */,
-				0734F8A51EBBB73B00252D49 /* Perfil.swift */,
+			);
+			path = MiOtroSteam;
+			sourceTree = "<group>";
+		};
+		07C9863B1EE3107E0053D44B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				077A99FD1EA93EC1005F3820 /* ViewController.swift */,
+				AEDD12FE1EBB871E00DF0719 /* ProfileController.swift */,
+				4FD8DBBB1EC6840200E79E0F /* GamesController.swift */,
 				AE55A9851EC213CA005BCC92 /* FullProfileController.swift */,
 				AE55A9891EC22794005BCC92 /* FriendsController.swift */,
 				AE3307091EC4B59600CF99BB /* AchievementsController.swift */,
-				AE33070B1EC4BB7E00CF99BB /* Logro.swift */,
+				07C986391EE30F790053D44B /* NewsController.swift */,
 			);
-			path = MiOtroSteam;
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		07C9863D1EE310C70053D44B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4FD8DBB91EC683F500E79E0F /* Game.swift */,
+				AE77D8CD1EAFA3F00084D81D /* APIHelper.swift */,
+				0734F8A51EBBB73B00252D49 /* Perfil.swift */,
+				AE33070B1EC4BB7E00CF99BB /* Logro.swift */,
+				07C9863E1EE311750053D44B /* Noticia.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C9863A1EE30F790053D44B /* NewsController.swift in Sources */,
+				07C9863F1EE311750053D44B /* Noticia.swift in Sources */,
 				0734F8A61EBBB73B00252D49 /* Perfil.swift in Sources */,
 				4FD8DBBA1EC683F500E79E0F /* Game.swift in Sources */,
 				AEDD12FF1EBB871E00DF0719 /* ProfileController.swift in Sources */,

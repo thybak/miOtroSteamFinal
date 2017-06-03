@@ -25,9 +25,8 @@ class ProfileController : UIViewController {
                 if self.perfil?.personaname != "" {
                     self.btnFullProfile.isEnabled = true
                     self.welcomeLbl.text = self.welcomeLbl.text! + self.perfil!.personaname
-                    let url = URL(string: self.perfil!.avatarfull)
-                    if url != nil {
-                        APIHelper.setImagenDesdeUrl(url: url!, updateUI: {(image) in self.profileImg.image = image})
+                    if let url = URL(string: self.perfil!.avatarfull) {
+                        APIHelper.setImagenDesdeUrl(url: url, updateUI: {(image) in self.profileImg.image = image})
                     }
                     if self.perfil?.communityvisibilitystate != 3 {
                         let alert = UIAlertController(title: "Perfil privado", message: "Desafortunadamente, este usuario tiene establecido su perfil como privado. No se podrá ver su listado de amigos, ni de juegos ni de logros",

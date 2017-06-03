@@ -22,8 +22,12 @@ class Game {
         if claves["name"] != nil {
             self.name = claves["name"]! as! String
         }
-        self.appId = claves["appid"]! as! Int
-        self.playTimeForever = claves["playtime_forever"]! as! Int
+        if let appId = claves["appid"] as? Int {
+            self.appId = appId
+        }
+        if let playTimeForever = claves["playtime_forever"] as? Int {
+            self.playTimeForever = playTimeForever
+        }
         if claves["img_icon_url"] != nil {
             self.imgIconHash = claves["img_icon_url"]! as! String
             self.imgIconUrl = self.establecerUrlImagen(hash: self.imgIconHash, fromAppId: self.appId)

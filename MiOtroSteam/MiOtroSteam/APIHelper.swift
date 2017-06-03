@@ -31,9 +31,12 @@ class APIHelper {
                     print("error")
                 } else {
                     do {
-                        let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String : AnyObject]
-                        cache.setObject(json as AnyObject, forKey: url as NSString)
-                        parseJson(json as AnyObject)
+                        if let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as? [String : AnyObject] {
+                            cache.setObject(json as AnyObject, forKey: url as NSString)
+                            parseJson(json as AnyObject)
+                        } else {
+                            print("Ha habido un error a la hora de obtener el JSON")
+                        }
                     }
                     catch let error as NSError{
                         print(error)
@@ -79,6 +82,24 @@ class APIHelper {
             }
         })
     }
+    /* En esta función se consulta a la API para obtener las noticias relativas a un juego pasado por parámetro */
+    static func getListaNews (appId: Int, numeroNews: Int, updateUI: @escaping ([Noticia]) -> Void){
+        let urlNewsInfo = URL_BASE + "/ISteamNews/GetNewsForApp/v0002/?appid=" + String(appId) + "&count=" + String(numeroNews) + "&maxlength=255&format=json"
+        getFromAPIOrCache(url: urlNewsInfo, parseJson: { (json) in
+            var listaNews : [Noticia] = []
+            let newsJson = json["appnews"] as! [String: AnyObject]
+            if let news = newsJson["newsitems"] as? [[String: AnyObject]]{
+                for new in news {
+                    let oNew = Noticia(claves: new)
+                    listaNews.append(oNew)
+                }
+            }
+            DispatchQueue.main.async {
+                updateUI(listaNews)
+            }
+            
+        })
+    }
     /* En esta función se consulta a la API para obtener los amigos del usuario*/
     static func getListaAmigos (steamId: String, updateUI: @escaping () -> Void){
         let urlUserInfo = URL_BASE + "/ISteamUser/GetFriendList/v0001/?key=" + API_KEY + "&steamid=" + steamId + "&relationship=friend"
@@ -118,21 +139,18 @@ class APIHelper {
             }
         })
     }
-      /* En esta función se consulta a la API para obtener  un resumen de los juegos del usuario */
+    /* En esta función se consulta a la API para obtener  un resumen de los juegos del usuario */
     static func getSchemaGame (gameId: Int, updateUI: @escaping (String) -> Void){
         let urlGameInfo = URL_BASE + "/ISteamUserStats/GetSchemaForGame/v2/?key=" + API_KEY + "&appid="+String(gameId)+"&l=spanish"
         getFromAPIOrCache(url: urlGameInfo, parseJson: { (json) in
             let responsegame = json["game"] as! [String:AnyObject]
-            if let gameName = responsegame["gameName"] as? String{
-                if(gameName.isEmpty){
+            if let gameName = responsegame["gameName"] as? String {
+                if (gameName.isEmpty){
                     updateUI("Nombre vacio")
-                    
-                }
-                else{
+                } else {
                     updateUI(gameName)
                 }
-            }
-            else{
+            } else {
                 updateUI("No es posible recuperar este nombre")
             }
         })
@@ -146,7 +164,7 @@ class APIHelper {
             }
             guard let response = response as? HTTPURLResponse, response.statusCode == 200
                 else {
-                    print("response error")
+                    print("Error de respuesta en imagen")
                     return
                 }
             DispatchQueue.main.async {
